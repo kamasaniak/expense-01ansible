@@ -2,7 +2,7 @@
   hosts: mysql
   become: yes
   tasks:
-  - name: install MYSQL srever 
+  - name: Install MYSQL srever 
     ansible.builtin.package:
     name: mysql-server 
     state: installed 
