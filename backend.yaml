@@ -10,9 +10,8 @@
 
   - name: install nodejs
     ansible.builtin.package.
-      name: nodejs
+    name: nodejs
       state: present 
   - name: create expence user 
     ansible.builtin.user.
-      name: expence 
-      
+    name: expence 
