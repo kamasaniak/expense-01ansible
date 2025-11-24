@@ -12,6 +12,16 @@
       name: mysql 
       state: started 
       enabled: yes 
+- name : connet to mysql server 
+  community.mysql.mysql_info:
+    login_user: root 
+    login_passowrd: ExpenseApp@1
+    login_host: mysql.rvbp.store
+  register:mysql_info 
 
+- name: print the out 
+  ansible.builtin.debug:
+    msg: "MYSQL info: {{ mysql_info }}"
+    
 
  
