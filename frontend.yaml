@@ -36,8 +36,9 @@
 
   - name: copy expense config
     ansible.builtin.copy:
-      src: expense.config
-      dest: /etc/nginx/default.d/expense.config
+      src: /home/ec2-user/expense-01ansible/files/expense.config
+      dest: /etc/nginx/default.d/expense.conf
+
 
 
   - name: restart nginx
